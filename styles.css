@@ -1,0 +1,314 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #110043;
+    color: #FFFFFF;
+    flex-direction: column;
+    font-size: 2vh; /* Tamanho da fonte baseado na altura da viewport */
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    color: #110043;
+    padding: 2vh; 
+}
+
+.corner {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw; 
+    height: 10vh;
+}
+
+.top-left, .bottom-left {
+    order: 0;
+    height: 6vh;
+}
+
+.top-right, .bottom-right {
+    order: 2;
+    height: 6vh;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.0vw; /* Tamanho da fonte ajustado para a altura da viewport */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100vw; /* Largura total da viewport */
+    height: 8vh;
+    margin-top: 1vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1vw;
+}
+
+.metadata-item img {
+    width: 25vw; 
+    margin-right: 2vw;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.metadata-info {
+    flex-grow: 1;
+    font-size: 1.5vw; 
+    align-items: normal;
+    height: 100%;
+}                       
+
+select, input[type="text"] {
+    padding: 1vh;
+    margin-right: 1vw;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1.8vh; /* Tamanho da fonte ajustado para a altura da viewport */
+}
+
+.custom-button, button {
+    background-color: white;
+    color: #110043;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8vh; /* Tamanho da fonte ajustado para a altura da viewport */
+    width: 15vw;
+    height: 10vh;
+}
+
+#botao button {
+    background-color: white;
+    color: #110043;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8vh; /* Tamanho da fonte ajustado para a altura da viewport */
+    width: 5vw;
+    height: 9vh;
+}
+
+
+.custom-button:hover, button:hover {
+    background-color: #0056b3;
+}
+
+#botao {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+#metadataList {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+
+/* Estilos adicionais para botões com imagens */
+.word-button, .kml-button, .excel-button, .json-button, .up-button {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border: none;
+    cursor: pointer;
+}
+
+.up-button{
+    background-image: url('upload.png');
+}
+
+.word-button {
+    background-image: url('word.png');
+}
+
+.kml-button {
+    background-image: url('google-earth.png');
+}
+
+.excel-button {
+    background-image: url('excel.png');
+}
+
+.json-button {
+    background-image: url('json-file.png');
+}
+
+#upload-label {
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, color 0.3s; 
+    display: inline-block; 
+    text-align: center; 
+    margin: 10px 0; 
+    width: 50%;
+}
+
+
+#upload-label:hover {
+    background-color: #0056b3; 
+    color: #fff; 
+}
+
+
+#upload-label:focus {
+    box-shadow: 0 0 0 2px #0056b3; 
+}
+
+
+.custom-button-upload{
+    width: 50%;
+}
+
+.itemup{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    margin: 20px;
+}
+
+.image-column, .text-column {
+    flex: 1; 
+    padding: 10px;
+}
+
+.image-column {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.image-column img {
+    width: 80%; 
+    height: 80%; 
+}
+
+.text-column {
+    background-color: whitesmoke;
+}
+
+.text-column h2{
+    background-color: whitesmoke;
+    color:#110043;
+    font-size: 1vw;
+}
+
+.text-column p{
+    background-color: whitesmoke;
+    font-size: 0.8vw;
+    color:#110043;
+}
+
+.itensghost{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.metadata-item {
+    color: #110043;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items:flex-start;
+    font-size: 2vw;
+}
+
+.metadata-item select {
+    font-size: 1em;
+    padding: 8px 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.metadata-item select:focus {
+    border-bottom: 2px solid #007bff; 
+    outline: none;
+}
+
+
+.metadata-item select option {
+    padding: 8px 5px;
+    background-color: white;
+}
+
+
+.metadata-item input[type="text"] {
+    font-size: 1em;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: calc(100% - 16px); 
+    box-sizing: border-box; 
+}
+
+.metadata-item input[type="text"]:focus {
+    border-bottom: 2px solid #007bff; 
+    outline: none; 
+}
+
+#jsonInput-label {
+    background-color: #28a745; /* Cor de fundo diferente para o botão JSON */
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, color 0.3s; 
+    display: inline-block; 
+    text-align: center; 
+    margin: 10px 0; 
+    width: 50%;
+}
+
+#jsonInput-label:hover {
+    background-color: #218838; /* Escurecer ligeiramente ao passar o mouse */
+    color: #fff; 
+}
+
+#jsonInput-label:focus {
+    box-shadow: 0 0 0 2px #218838; /* Foco com cor de destaque */
+}
+
+.remove-button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
